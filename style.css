@@ -12,6 +12,7 @@
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
+  background-color: var(--light-grayish-blue);
 }
 
 .a,
@@ -20,36 +21,42 @@ body {
 .d,
 .e {
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 .container {
   min-height: 300px;
   display: grid;
-  grid-gap: 20px;
-  margin: 100px;
+  grid-gap: 15px;
+  margin: 50px;
 }
 
 .clifford {
   grid-column: 1 /3;
   grid-row: 1 / 2;
+  background-color: var(--violet);
 }
 
 .walters {
   grid-column: 3 / 4;
   grid-row: 1 /2;
+  background-color: var(--gray-blue);
 }
 
 .harmon {
   grid-column: 1 / 2;
   grid-row: 2 /3;
+  background-color: var(--white);
 }
 
 .abrams {
   grid-column: 2/4;
   grid-row: 2/3;
+  background-color: var(--black-blue);
 }
 
 .whittle {
   grid-column: 4/5;
   grid-row: 1/3;
+  background-color: var(--white);
 }
