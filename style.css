@@ -15,48 +15,37 @@ body {
   background-color: var(--light-grayish-blue);
 }
 
-/* .a,
-.b,
-.c,
-.d,
-.e {
-  border: 1px solid black;
-  border-radius: 10px;
-} */
-
 .container {
   display: grid;
   grid-gap: 19px;
   margin: 50px;
+  grid-template-areas:
+    "clifford clifford walters whittle"
+    "harmon abrams abrams whittle";
 }
 
 .clifford {
-  grid-column: 1 /3;
-  grid-row: 1 / 2;
+  grid-area: clifford;
   background-color: var(--violet);
 }
 
 .walters {
-  grid-column: 3 / 4;
-  grid-row: 1 /2;
+  grid-area: walters;
   background-color: var(--gray-blue);
 }
 
 .harmon {
-  grid-column: 1 / 2;
-  grid-row: 2 /3;
+  grid-area: harmon;
   background-color: var(--white);
 }
 
 .abrams {
-  grid-column: 2/4;
-  grid-row: 2/3;
+  grid-area: abrams;
   background-color: var(--black-blue);
 }
 
 .whittle {
-  grid-column: 4/5;
-  grid-row: 1/3;
+  grid-area: whittle;
   background-color: var(--white);
 }
 
@@ -125,8 +114,13 @@ header {
 }
 
 /* Media Queries */
-/* @media (max-width: 500px) {
+@media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-areas:
+      "clifford"
+      "walters"
+      "harmon"
+      "abrams"
+      "whittle";
   }
-} */
+}
